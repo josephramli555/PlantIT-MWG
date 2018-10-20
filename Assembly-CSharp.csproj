@@ -51,6 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\script\pestbuster\pest.cs" />
+     <Compile Include="Assets\script\pestbuster\pestbuster.cs" />
+     <Compile Include="Assets\script\Seeding\Seeds.cs" />
+     <Compile Include="Assets\script\seedmanager.cs" />
      <Compile Include="Assets\script\touchtest.cs" />
      <Compile Include="Assets\script\watermeter.cs" />
      <Compile Include="Assets\script\WaterTapButton.cs" />
