@@ -12,6 +12,7 @@ public class watermeter : MonoBehaviour {
     Vector2 pointerpos;
 	public float speed;
 	bool isright;
+
     void Start () {
 		isright=true;
 	}
@@ -63,6 +64,5 @@ public class watermeter : MonoBehaviour {
         }
         
     }
-    
 
 }
