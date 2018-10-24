@@ -6,15 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene/MainMenu.unity
+    guid: 8200738cda3adb240b64482281b44204
+  - enabled: 1
     path: Assets/Scene/Fertilizer.unity
     guid: 41cac2f6869b96b4c9e2edf96b40a393
-  - enabled: 1
-    path: Assets/Scene/pestbuster.unity
-    guid: 7bbc65c9997b4cb48b443628365f179f
   - enabled: 1
     path: Assets/Scene/plantingseed.unity
     guid: f055b4afb5ae86d45a925ea33af16a1a
   - enabled: 1
     path: Assets/Scene/Watering.unity
     guid: b8b9479a232c69e4fa6a4381c09d6455
+  - enabled: 1
+    path: Assets/Scene/test.unity
+    guid: 2212ac3e5fe7e5e49b554615e38daf1b
+  - enabled: 1
+    path: Assets/Scene/pestbuster.unity
+    guid: 7bbc65c9997b4cb48b443628365f179f
   m_configObjects: {}

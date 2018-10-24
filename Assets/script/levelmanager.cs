@@ -19,4 +19,13 @@ public class levelmanager : MonoBehaviour {
 	{
 		SceneManager.LoadScene(levelToLoad);
 	}
+
+	public void quit(){
+		#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying=false;
+		#else
+		Application.Quit();
+		#endif
+	}
+
 }
