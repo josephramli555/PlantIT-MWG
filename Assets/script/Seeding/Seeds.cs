@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class Seeds : MonoBehaviour,IPointerClickHandler {
 
-	
+
 
 	public GameObject manager;
 	public int index;

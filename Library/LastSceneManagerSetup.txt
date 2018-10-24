@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Watering.unity
+- path: Assets/Scene/Fertilizer.unity
   isLoaded: 1
   isActive: 1

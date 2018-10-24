@@ -6,6 +6,7 @@ TagManager:
   tags:
   - boundary
   - greenarea
+  - Canvas
   layers:
   - Default
   - TransparentFX
