@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/pestbuster.unity
+- path: Assets/Scene/Treegame.unity
   isLoaded: 1
   isActive: 1

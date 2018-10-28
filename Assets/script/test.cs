@@ -12,7 +12,7 @@ public class test : MonoBehaviour
     private Vector3 inputPosition;
 
     void Start(){
-		speed = 2;	
+		//speed = 2;	
         offset += 10;
     }
 
@@ -42,6 +42,6 @@ public class test : MonoBehaviour
             transform.position = Vector2.Lerp(transform.position, inputPosition, speed);
             Debug.Log("lerp  jalan");
         }
-        }
+    }
 
 }
