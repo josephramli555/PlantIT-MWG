@@ -96,11 +96,6 @@
     <Compile Include="Assets\script\seedmanager.cs" />
     <Compile Include="Assets\script\test.cs" />
     <Compile Include="Assets\script\touchtest.cs" />
-    <Compile Include="Assets\script\treegame\Timer.cs" />
-    <Compile Include="Assets\script\treegame\gamemanager.cs" />
-    <Compile Include="Assets\script\treegame\soil.cs" />
-    <Compile Include="Assets\script\treegame\test2.cs" />
-    <Compile Include="Assets\script\treegame\tree.cs" />
     <Compile Include="Assets\script\watermeter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
