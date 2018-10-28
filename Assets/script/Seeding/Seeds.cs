@@ -24,15 +24,11 @@ public class Seeds : MonoBehaviour,IPointerClickHandler {
 		{
 			Debug.Log("Jawaban Benar");
             manager.GetComponent<seedmanager>().seedamount--;
-			manager.GetComponent<seedmanager>().rightAnswer++;
-			Debug.Log(manager.GetComponent<seedmanager>().rightAnswer);
-			gameObject.SetActive(false);
 		}
 		else if(manager.GetComponent<seedmanager>().answer[index]==false)
 		{
 			Debug.Log("Jawaban salah ");
             manager.GetComponent<seedmanager>().seedamount--;
-			gameObject.SetActive(false);
         }
 		
 	

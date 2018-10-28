@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/Treegame.unity
+=======
+- path: Assets/Scene/MainMenu.unity
+>>>>>>> parent of f6156b9... Added Abel Script
   isLoaded: 1
   isActive: 1

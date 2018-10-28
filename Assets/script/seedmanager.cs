@@ -11,15 +11,12 @@ public class seedmanager : MonoBehaviour {
 	public List <bool> answer;
     public GameObject buttonnext;
     public GameObject MinigameUI;
-
-	public int rightAnswer;
 	void Start () {
 	
 		answer= new List<bool>{false,false,false,false,false,false,false,false,false,};
 		
 		shuffleanswer();
 		Invoke("hideanswer",3);
-		rightAnswer=0;
 			
 	}
 	
@@ -30,10 +27,6 @@ public class seedmanager : MonoBehaviour {
         {
             buttonnext.SetActive(true);
             MinigameUI.SetActive(false);
-			if(rightAnswer>=3)
-			{
-				PlayerPrefs.SetInt("gameSuccess",PlayerPrefs.GetInt("gameSuccess",0)+1);
-			}
         }
 	}
 

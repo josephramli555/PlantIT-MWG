@@ -26,22 +26,26 @@ public class test : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isDragged = false;
-            //gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
 
-        if (Input.GetMouseButtonDown(0) && ((inputPosition - transform.position).magnitude <= offset))
+        if (Input.GetMouseButtonDown(0) )//&& ((inputPosition - transform.position).magnitude <= offset))
         {
-           // gameObject.GetComponent<MeshRenderer>().enabled = true;
+            gameObject.GetComponent<MeshRenderer>().enabled = true;
             if (!isDragged)
                 isDragged = true;
-            Debug.Log(" Kont");
         }
 
         if (isDragged)
-        {
             transform.position = Vector2.Lerp(transform.position, inputPosition, speed);
+<<<<<<< HEAD
             Debug.Log("lerp  jalan");
         }
+=======
+>>>>>>> parent of f6156b9... Added Abel Script
     }
 
+    void OnTriggerEnter(Collider other){
+        Debug.Log("bump");
+    }
 }

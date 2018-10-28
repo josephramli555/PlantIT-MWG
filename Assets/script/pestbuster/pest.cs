@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class pest : MonoBehaviour,IPointerClickHandler
 {
 
-    
-
 	// Use this for initialization
 	void Start () {
 		
@@ -31,8 +29,7 @@ public class pest : MonoBehaviour,IPointerClickHandler
 
     public void OnPointerClick(PointerEventData data)
     {
-            
-       PlayerPrefs.SetInt("pestScore",PlayerPrefs.GetInt("pestScore",0)+1);
+        Debug.Log("Kontol gamenya anjing");
         Destroy(this.gameObject);
 
     }
