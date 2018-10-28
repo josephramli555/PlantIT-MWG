@@ -4,9 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - boundary
-  - greenarea
-  - Canvas
+  - tree
   layers:
   - Default
   - TransparentFX
