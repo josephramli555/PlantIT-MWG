@@ -444,7 +444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Prototype (v0.1)
+  m_Text: Game Prototype (v0.2)
 --- !u!222 &749239323
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -596,18 +596,19 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Prototype includes all minigames:
 
-    -Pick and pattern slash
+    -Fertilizing
 
     -Pattern planting
 
     -Watering
 
-    -Drag and Drop
+    -Plant moving
 
     -Pest deletion
 
 
-    Due to the nature of first prototype, it is possible to have failed launch.'
+    Due to the nature of prototypes, it is possible to have glicth and/or unexpected
+    results.'
 --- !u!222 &1498659527
 CanvasRenderer:
   m_ObjectHideFlags: 0
