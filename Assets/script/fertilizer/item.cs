@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class item : MonoBehaviour, IPointerClickHandler {
+public class item : MonoBehaviour,IPointerClickHandler{
 
 	public GameObject manager;
 	public int index;
@@ -20,8 +20,31 @@ public class item : MonoBehaviour, IPointerClickHandler {
 		
 	}
 
-		public  void OnPointerClick(PointerEventData data)
-    	{
+			public void OnPointerClick(PointerEventData data)
+			{
+				if(answer==true)
+				{
+					Debug.Log(answer==true);
+					manager.GetComponent<fertilizermanager>().rightAnswer++;
+				}
+
+			manager.GetComponent<fertilizermanager>().hideanswer(index);
+			manager.GetComponent<fertilizermanager>().clickedNumber++;
+			}
+		// public  void OnPointerClick(PointerEventData data)
+    	// {
+		// 	if(answer==true)
+		// 	{
+		// 		Debug.Log(answer==true);
+		// 		manager.GetComponent<fertilizermanager>().rightAnswer++;
+		// 	}
+
+		// 	manager.GetComponent<fertilizermanager>().hideanswer(index);
+		// 	manager.GetComponent<fertilizermanager>().clickedNumber++;
+	
+    	// }
+		public  void OnMouseDown()
+	    {
 			if(answer==true)
 			{
 				Debug.Log(answer==true);
@@ -32,4 +55,6 @@ public class item : MonoBehaviour, IPointerClickHandler {
 			manager.GetComponent<fertilizermanager>().clickedNumber++;
 	
     	}
+
+	
 }

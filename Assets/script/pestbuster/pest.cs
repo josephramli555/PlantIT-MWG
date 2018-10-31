@@ -6,9 +6,12 @@ using UnityEngine.UI;
 public class pest : MonoBehaviour,IPointerClickHandler
 {
 
+    
+
 	// Use this for initialization
 	void Start () {
-		
+
+	    PlayerPrefs.SetInt("pestScore",0);
 	}
 
     //update is called once per frame
@@ -29,7 +32,9 @@ public class pest : MonoBehaviour,IPointerClickHandler
 
     public void OnPointerClick(PointerEventData data)
     {
-        Debug.Log("Kontol gamenya anjing");
+            
+       PlayerPrefs.SetInt("pestScore",PlayerPrefs.GetInt("pestScore",0)+1);
+       Debug.Log(PlayerPrefs.GetInt("pestScore",0));
         Destroy(this.gameObject);
 
     }

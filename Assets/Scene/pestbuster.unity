@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -204,8 +204,9 @@ GameObject:
   - component: {fileID: 354423873}
   - component: {fileID: 354423875}
   - component: {fileID: 354423874}
+  - component: {fileID: 354423876}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,7 +227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 7, y: -102}
+  m_AnchoredPosition: {x: 7, y: -176}
   m_SizeDelta: {x: 392.6, y: 73.599976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354423874
@@ -261,7 +262,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: End of Demo, My Dudes
+  m_Text: Timer
 --- !u!222 &354423875
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -269,6 +270,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 354423872}
   m_CullTransparentMesh: 0
+--- !u!114 &354423876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 354423872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e445d8f2b0efb4e86f222760a1de31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLeft: 5
+  countdownText: {fileID: 354423874}
 --- !u!1 &378672436
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +429,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1894865571}
-        m_MethodName: quit
+        m_MethodName: changelevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -824,12 +838,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81887a15791e7d24bb18a11acb3cff99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 354423872}
+  pestlist: []
   pest: {fileID: 171301625}
   panel: {fileID: 1974919721}
   Maxx: 480
   Maxy: 345
   Minx: -480
   Miny: -344
+  isUpdatedScore: 0
 --- !u!114 &1894865571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -841,7 +858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822ede38d7b6d924a94ab7bfc1fc7d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: 
+  levelToLoad: FinalScene
 --- !u!1 &1974919720
 GameObject:
   m_ObjectHideFlags: 0
