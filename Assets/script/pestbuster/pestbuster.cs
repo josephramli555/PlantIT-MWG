@@ -47,18 +47,15 @@ public class pestbuster : MonoBehaviour {
             {
                 Destroy(pestlist[x]);
             }
-
-
-            if(PlayerPrefs.GetInt("pestScore",0)==5 && isUpdatedScore==false){
-                    PlayerPrefs.SetInt("gameSuccess",PlayerPrefs.GetInt("gameSuccess",0)+1);
-                   Debug.Log("Jumlah Kemenangan"+PlayerPrefs.GetInt("gameSuccess",0));
-                    isUpdatedScore=true;
-            }
-            
         }
-
+    if (PlayerPrefs.GetInt("pestScore", 0) == 5 && isUpdatedScore == false)
+    {
+            PlayerPrefs.SetInt("gameSuccess", PlayerPrefs.GetInt("gameSuccess", 0) + 1);
+            Debug.Log("Jumlah Kemenangan" + PlayerPrefs.GetInt("gameSuccess", 0));
+            isUpdatedScore = true;
+        }
     
-	}
+}
 
 
     

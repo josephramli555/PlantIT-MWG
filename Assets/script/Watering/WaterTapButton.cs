@@ -11,7 +11,7 @@ public class WaterTapButton : MonoBehaviour {
     private GameObject spawnedEffect;
     private ParticleSystem ps;
 	private Slider slide;
-	private int slValue = 0;
+	public int slValue = 0;
 
 	public bool isOn = false;
 

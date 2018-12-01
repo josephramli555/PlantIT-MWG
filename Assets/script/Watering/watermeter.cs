@@ -9,6 +9,7 @@ public class watermeter : MonoBehaviour {
 	public GameObject pointer;
     public GameObject spawnedEffect;
     public bool count = false;
+    public bool isGreen =false;
     Vector2 pointerpos;
 	public float speed;
 	bool isright;
@@ -53,11 +54,12 @@ public class watermeter : MonoBehaviour {
     }
 
     void OnTriggerStay2D(Collider2D col) {
-        if (col.CompareTag("greenarea") && Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             spawnedEffect = (GameObject)Instantiate(effect, effect.transform.position, effect.transform.rotation);
             count = true;
             Debug.Log("Cleared, next level");
+            if (col.CompareTag("greenarea")) isGreen = true;
             Destroy(spawnedEffect,2f);  
             button.SetActive(true);
         }

@@ -31,6 +31,14 @@ public class swipegame : MonoBehaviour
     public Text ScoreResult;
 
     public bool endGame;
+
+    void hideArrow()
+    {
+        for(int i=0;i<4;i++)
+        {
+            arrow[i].SetActive(false);
+        }
+    }
     void Start()
     {
         endGame=false;
@@ -84,6 +92,7 @@ public class swipegame : MonoBehaviour
                 PlayerPrefs.SetInt("gameSuccess",PlayerPrefs.GetInt("gameSuccess",0)+1);
                 isUpdatedScore=true;
                 Debug.Log("Jumlah Kemenangan"+PlayerPrefs.GetInt("gameSuccess",0));
+                hideArrow();
             }
             nextLevel.SetActive(true);
         }

@@ -13,11 +13,14 @@ public class fertilizermanager : MonoBehaviour
     public List<GameObject> Position;
 
     public GameObject questionUi;
+    public GameObject answerUi;
+    public GameObject timerUi;
     public GameObject swipeUi;
     public int rightAnswer;
 
 
     public Text Score;
+
     void Start()
     {
         PlayerPrefs.SetInt("gameSuccess",0);
@@ -34,6 +37,12 @@ public class fertilizermanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(timerUi.GetComponent<Timer>().timeLeft == 0)
+        {
+            questionUi.SetActive(false);
+            timerUi.SetActive(false);
+            answerUi.SetActive(true);
+        }
         UpdateNilai();
 
     }
@@ -45,7 +54,7 @@ public class fertilizermanager : MonoBehaviour
         Score.text = rightAnswer.ToString();
         if (clickedNumber == 3)
         {
-            questionUi.SetActive(false);
+            answerUi.SetActive(false);
             swipeUi.SetActive(true);
         }
     }

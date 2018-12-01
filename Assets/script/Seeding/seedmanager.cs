@@ -11,6 +11,7 @@ public class seedmanager : MonoBehaviour {
 	public List <bool> answer;
     public GameObject buttonnext;
     public GameObject MinigameUI;
+    public GameObject image;
 
 	public bool isUpdatedScore;
 
@@ -28,7 +29,6 @@ public class seedmanager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Invoke("checkanswer",3);
         if (seedamount == 0)
         {
             buttonnext.SetActive(true);
@@ -64,6 +64,7 @@ public class seedmanager : MonoBehaviour {
 
 	void hideanswer()
 	{
+        image.SetActive(false);
 		for(int i=0;i<9; i++)
 		{
 			arrow[i].SetActive(false);
@@ -71,19 +72,4 @@ public class seedmanager : MonoBehaviour {
 		}
 	}
 
-	void checkanswer()
-	{
-		// for(int i=0;i<9;i++)
-		// {
-		// 	if(answer[i]==true && ground[i].GetComponent<Seeds>().isselected==true)
-		// 	{
-		// 		Debug.Log("Jawaban benar");
-		// 	}
-		// 	else if(answer[i]==false && ground[i].GetComponent<Seeds>().isselected==true)
-		// 	{
-		// 		Debug.Log("Jawaban benar");
-		// 	}
-		// }
-        // while(j>0){ seeds.onpointer() j-- }
-	}
 }

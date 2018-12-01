@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 3a9c3f03d1874db4580e3b0f73af59dd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Body_Bone
+    100004: Bone003
+    100006: Bone008
+    100008: Bone009
+    100010: Box001
+    100012: Camera001
+    100014: Camera001.Target
+    100016: Head_Bone
+    100018: Head_Ctrl
+    100020: Hip_Ctrl
+    100022: L_Angkle_Bone
+    100024: L_Foot_Bone
+    100026: L_Foot_Ctrl
+    100028: L_Foot_Helper
+    100030: L_Foot_IK_Goal
+    100032: L_Heel_Helper
+    100034: L_Heel_IK_Goal
+    100036: L_Heelpeel_Help
+    100038: L_Leg_Bone
+    100040: L_Toe_Bone
+    100042: L_Toe_Helper
+    100044: L_Toe_IK_Goal
+    100046: Main_Root
+    100048: R_Angkle_Bone
+    100050: R_Foot_Bone
+    100052: R_Foot_Ctrl
+    100054: R_Foot_Helper
+    100056: R_Foot_IK_Goal
+    100058: R_Heel_Helper
+    100060: R_Heel_IK_Goal
+    100062: R_Heelpeel_Help
+    100064: R_Leg_Bone
+    100066: R_Toe_Bone
+    100068: R_Toe_Helper
+    100070: R_Toe_IK_Goal
+    100072: Spot001
+    100074: Spot001.Target
+    400000: //RootNode
+    400002: Body_Bone
+    400004: Bone003
+    400006: Bone008
+    400008: Bone009
+    400010: Box001
+    400012: Camera001
+    400014: Camera001.Target
+    400016: Head_Bone
+    400018: Head_Ctrl
+    400020: Hip_Ctrl
+    400022: L_Angkle_Bone
+    400024: L_Foot_Bone
+    400026: L_Foot_Ctrl
+    400028: L_Foot_Helper
+    400030: L_Foot_IK_Goal
+    400032: L_Heel_Helper
+    400034: L_Heel_IK_Goal
+    400036: L_Heelpeel_Help
+    400038: L_Leg_Bone
+    400040: L_Toe_Bone
+    400042: L_Toe_Helper
+    400044: L_Toe_IK_Goal
+    400046: Main_Root
+    400048: R_Angkle_Bone
+    400050: R_Foot_Bone
+    400052: R_Foot_Ctrl
+    400054: R_Foot_Helper
+    400056: R_Foot_IK_Goal
+    400058: R_Heel_Helper
+    400060: R_Heel_IK_Goal
+    400062: R_Heelpeel_Help
+    400064: R_Leg_Bone
+    400066: R_Toe_Bone
+    400068: R_Toe_Helper
+    400070: R_Toe_IK_Goal
+    400072: Spot001
+    400074: Spot001.Target
+    2000000: Camera001
+    2100000: 02 - Default
+    2100002: default
+    2100004: No Name
+    2300000: L_Foot_Ctrl
+    2300002: R_Foot_Ctrl
+    3300000: L_Foot_Ctrl
+    3300002: R_Foot_Ctrl
+    4300000: Box001
+    4300002: R_Foot_Ctrl
+    4300004: L_Foot_Ctrl
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Spot001
+    13700000: Box001
+    6000828045688606266: Camera001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
